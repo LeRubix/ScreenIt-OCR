@@ -16,7 +16,7 @@ translator = Translator()
 class ScreenTranslateApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("ScreenTranslate OCR")
+        self.root.title("ScreenIt OCR Translator")
         root.iconbitmap("assets/icon.ico")
 
         self.root.configure(bg='#2e2e2e')
@@ -34,7 +34,7 @@ class ScreenTranslateApp:
         self.text_area = scrolledtext.ScrolledText(root, wrap=tk.WORD, width=60, height=20, bg='#1e1e1e', fg='#ffffff', insertbackground='white', font=(font_family, font_size))
         self.text_area.pack(padx=10, pady=10)
 
-        self.start_button = ttk.Button(root, text="Start", command=self.start_translation)
+        self.start_button = ttk.Button(root, text="Start Translating", command=self.start_translation)
         self.start_button.pack(side=tk.LEFT, padx=10, pady=10)
 
         self.stop_button = ttk.Button(root, text="Stop", command=self.stop_translation, state=tk.DISABLED)
