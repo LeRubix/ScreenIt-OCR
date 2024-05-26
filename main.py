@@ -6,6 +6,8 @@ import threading
 from PIL import Image, ImageEnhance, ImageFilter, ImageOps
 import pytesseract
 from googletrans import Translator
+import langdetect
+from langdetect import detect
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
